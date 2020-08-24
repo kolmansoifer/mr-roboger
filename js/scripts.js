@@ -1,24 +1,32 @@
+// User Interface
 
-  // User Interface
+function robotSays(input) {
+  let robotArray = [];
+    for (let i = 0; i <= input; i ++) {
+      let num = i.toString();
+      if (num.includes("1")) {
+        robotArray.push( " " + " Bleep");
+      } else if (num.includes("2")) {
+        robotArray.push(" Bloop!");
+      } else if (num.includes("3")) {
+        robotArray.push("Won't you be my neighbor?");
+      } else {
+        robotArray.push(" " + num)
+      }
+    }
+    return robotArray;
+  }
+
+
 $(document).ready(function() {
-  $("#robot").submit(function(event) {
+  $("form#robot").submit(function(event) {
     event.preventDefault();
-    $(".result").hide();
+   
     const input = parseInt($("input#number").val());
-
-    if (input === 1) {
-      $(".result").text("Bleep!");
-    }
-    else if (input === 2) {
-      $(".result").text("Bloop!");
-    }
-    else if (input === 3) {
-      $(".result").text("Won't you be my neighbor?")
-    }
-
-    $(".result").text();
+    const robotSpeak = robotSays(input);
+    
+    $(".result").text(robotSpeak);
     $(".result").show();
         
-
   })
 });    
