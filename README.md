@@ -33,6 +33,9 @@
 ### Spec: The program will convert an input that contains 3 into "Won't you be my neighbor?" ###
   ### Input: "4" ###
   ### Output: "0", "Beep!", "Boop!", "Won't you be my neighbor?", "4". ###
+### Spec: The program will give precedent to numbers that contain 3 over those that contain 2. Additionally, it will give precedent to 2 over 1. ###
+  ### Input: "321" ###
+  ### Output: Last number will be converted to "Won't you be my neighbor?" because 3 takes precedent over 2.
 
 ## Legal ##
 
