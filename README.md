@@ -12,7 +12,7 @@
 
 ## Setup ##
 
-### Clone this repository and drag the url into a browser window ###
+### Clone this repository and drag the index.html file into a browser window ###
 
 
 ## Technologies Used ##
